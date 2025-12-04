@@ -11,7 +11,7 @@ hello: hello.o hello.h
 
 # Compilation
 hello.o: hello.c hello.h
-    $(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 test: hello
 	@./hello
