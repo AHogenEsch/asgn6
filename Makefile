@@ -5,11 +5,13 @@ CFLAGS = -Wall -ansi -pedantic
 
 all: hello
 
+# Linking 
 hello: hello.o hello.h
 	$(CC) $(CFLAGS) hello.o  -o hello
 
-# hello.o: hello.c hello.h
-# 	$(CC) $(CFLAGS) -c $< -o $@
+# Compilation
+hello.o: hello.c hello.h
+    $(CC) $(CFLAGS) -c $< -o $@
 
 test: hello
 	@./hello
