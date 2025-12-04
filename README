@@ -1,0 +1,5 @@
+August Hogen-Esch (ahogenes)
+
+Will build with "make" or "make hello"
+Will cleanly remove object files with "make clean"
+Will build and run with "make test"
