@@ -5,7 +5,7 @@ int main(int argc, char *argv[]){
     /* Greet the world, but don't forget about errors */
     if(printf("Hello, world!\n") < 0){
         fprintf(stderr, "Error: printf failed to write the message.\n");
-        return 1;
+        return EXIT_FAILURE;
     }
     /* Exit cleanly if no errors */
     return 0;
